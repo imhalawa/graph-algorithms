@@ -1,6 +1,6 @@
 ﻿using Graph.Undirected;
 
-var graph = new AdjacencyMatrixGraph(13);
+var graph = new AdjacencyListGraph(13);
 
 graph.AddEdge(0,1);
 graph.AddEdge(0,2);

@@ -48,7 +48,7 @@ public class AdjacencyMatrixGraph(int vertices) : IGraph<int>
             }
         }
 
-        return edges;
+        return edges / 2;
     }
 
     public int Edges(int vertex)
