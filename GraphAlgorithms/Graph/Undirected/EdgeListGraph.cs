@@ -16,9 +16,7 @@ public class EdgeListGraph : IGraph<int>
 
     public void AddEdge(int v, int w)
     {
-        var undirectedEdge = _edgeList.Where(e =>
-                (e.Source.Equals(v) && e.Destination.Equals(w)) || (e.Source.Equals(w) && e.Destination.Equals(v)))
-            .ToList();
+        var undirectedEdge = GetAssociatedEdges(v, w);
         if (undirectedEdge.Count != 0) return;
 
         _edgeList.Add(new Edge<int>(v, w));
@@ -37,9 +35,7 @@ public class EdgeListGraph : IGraph<int>
 
     public void RemoveEdge(int v, int w)
     {
-        var undirectedEdge = _edgeList.Where(e =>
-                (e.Source.Equals(v) && e.Destination.Equals(w)) || (e.Source.Equals(w) && e.Destination.Equals(v)))
-            .ToList();
+        var undirectedEdge = GetAssociatedEdges(v, w);
 
         if (undirectedEdge.Count == 0) return;
 
@@ -76,5 +72,9 @@ public class EdgeListGraph : IGraph<int>
         return _edgeList.Count(e => e.Source.Equals(vertex));
     }
 
+    private List<Edge<int>> GetAssociatedEdges(int v, int w)=>  _edgeList.Where(e =>
+            (e.Source.Equals(v) && e.Destination.Equals(w)) || (e.Source.Equals(w) && e.Destination.Equals(v)))
+        .ToList();
+    
     private record Edge<T>(T Source, T Destination);
 }
