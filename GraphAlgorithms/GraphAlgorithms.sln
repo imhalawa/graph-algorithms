@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdjacencyMatrixUndirectedGr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdjacencyListUndirectedGraphClient", "Clients\AdjacencyListUndirectedGraphClient\AdjacencyListUndirectedGraphClient.csproj", "{1B11CAA3-5EC5-47FE-8145-1C9E0C291864}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UndirectedGraphDfs", "Clients\UndirectedGraphDfs\UndirectedGraphDfs.csproj", "{E3124389-DA1B-4085-811A-4D82D58057D1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,10 @@ Global
 		{1B11CAA3-5EC5-47FE-8145-1C9E0C291864}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1B11CAA3-5EC5-47FE-8145-1C9E0C291864}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1B11CAA3-5EC5-47FE-8145-1C9E0C291864}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3124389-DA1B-4085-811A-4D82D58057D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3124389-DA1B-4085-811A-4D82D58057D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3124389-DA1B-4085-811A-4D82D58057D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3124389-DA1B-4085-811A-4D82D58057D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,6 +52,7 @@ Global
 		{C2659317-5F70-4846-AD29-5D012E46476D} = {F112E459-4DFA-4708-B8B4-5C77E5681629}
 		{D6B933C3-B045-4CE4-BEBF-FDE538686E53} = {00633CB2-6537-4B66-A43E-01E1D5096190}
 		{1B11CAA3-5EC5-47FE-8145-1C9E0C291864} = {00633CB2-6537-4B66-A43E-01E1D5096190}
+		{E3124389-DA1B-4085-811A-4D82D58057D1} = {00633CB2-6537-4B66-A43E-01E1D5096190}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EF6BA16D-BD1A-45EE-B785-60AAD9ABAF55}
