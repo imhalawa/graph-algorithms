@@ -2,7 +2,7 @@
 
 namespace Graph.Undirected.Problems;
 
-public class DepthFirstSearch
+public class DepthFirstSearch : IDepthFirstSearch
 {
     private readonly int[] _edgeTo;
     private readonly bool[] _visited;
@@ -39,27 +39,26 @@ public class DepthFirstSearch
         if (path.Count == 0) return "No paths were found!";
 
         var pathStr = new StringBuilder();
-        foreach (var point in path)
+        while (path.Count > 0)
         {
-            pathStr.Append($"{point} <- ");
+            var point = path.Pop();
+            pathStr.Append($"{point}{(path.Count == 0 ? "" : " -> ")}");
         }
 
         return pathStr.ToString();
     }
 
-    public List<int> PathTo(int s)
+    public Stack<int> PathTo(int s)
     {
         if (!HasPathTo(s)) return [];
 
-        List<int> path = [s];
-        var navigator = _edgeTo[s];
-        while (navigator != _edgeTo[navigator])
+        var path = new Stack<int>();
+        for (var x = s; x != _v; x = _edgeTo[x])
         {
-            path.Add(navigator);
-            navigator = _edgeTo[navigator];
+            path.Push(x);
         }
 
-        path.Add(navigator);
+        path.Push(_v);
         return path;
     }
 }
