@@ -1,6 +1,4 @@
-﻿using Graph.Interfaces;
-
-namespace Graph.Undirected.Problems;
+﻿namespace Graph.Undirected.Problems;
 
 public class ConnectedComponentsBuilder(AdjacencyListGraph graph)
 {
