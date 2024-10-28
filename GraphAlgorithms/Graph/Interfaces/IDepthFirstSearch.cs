@@ -1,4 +1,4 @@
-﻿namespace Graph.Undirected.Problems;
+﻿namespace Graph.Interfaces;
 
 public interface IDepthFirstSearch
 {

@@ -1,4 +1,5 @@
 ﻿using System.Text;
+using Graph.Interfaces;
 
 namespace Graph.Undirected.Problems;
 

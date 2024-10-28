@@ -16,8 +16,13 @@ graph.AddEdge(9, 11);
 graph.AddEdge(9, 12);
 graph.AddEdge(11, 12);
 
-var dfsAlgorithm = new DepthFirstSearch(graph, 0);
-Console.WriteLine($" (0 -> 12)?: {dfsAlgorithm.HasPathTo(12)}");
-Console.WriteLine($" (0 -> 6)?: {dfsAlgorithm.HasPathTo(6)}");
-Console.WriteLine(dfsAlgorithm.PathToStr(3));
-Console.WriteLine(dfsAlgorithm.PathToStr(6));
+var ccBuilder = new ConnectedComponentsBuilder(graph);
+var connectedComponents = ccBuilder.GetConnectedComponents();
+connectedComponents.ToList().ForEach(connectedComponent =>
+{
+    connectedComponent.ForEach(v =>
+    {
+        Console.Write($"{v},");
+    });
+    Console.WriteLine("\n------------------------------");
+});
