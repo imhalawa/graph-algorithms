@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UndirectedGraphDfs", "Clien
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UndirectedGraphConnectedComponents", "Clients\UndirectedGraphConnectedComponents\UndirectedGraphConnectedComponents.csproj", "{62690DE4-C71F-4CB7-A50A-C4138A958231}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UndirectedGraphDfsClockClient", "Clients\UndirectedGraphDfsClockClient\UndirectedGraphDfsClockClient.csproj", "{5825A7C5-6CB4-44B1-BCAD-164E504FE2CC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,6 +51,10 @@ Global
 		{62690DE4-C71F-4CB7-A50A-C4138A958231}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{62690DE4-C71F-4CB7-A50A-C4138A958231}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{62690DE4-C71F-4CB7-A50A-C4138A958231}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5825A7C5-6CB4-44B1-BCAD-164E504FE2CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5825A7C5-6CB4-44B1-BCAD-164E504FE2CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5825A7C5-6CB4-44B1-BCAD-164E504FE2CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5825A7C5-6CB4-44B1-BCAD-164E504FE2CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,6 +66,7 @@ Global
 		{1B11CAA3-5EC5-47FE-8145-1C9E0C291864} = {00633CB2-6537-4B66-A43E-01E1D5096190}
 		{E3124389-DA1B-4085-811A-4D82D58057D1} = {00633CB2-6537-4B66-A43E-01E1D5096190}
 		{62690DE4-C71F-4CB7-A50A-C4138A958231} = {00633CB2-6537-4B66-A43E-01E1D5096190}
+		{5825A7C5-6CB4-44B1-BCAD-164E504FE2CC} = {00633CB2-6537-4B66-A43E-01E1D5096190}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EF6BA16D-BD1A-45EE-B785-60AAD9ABAF55}

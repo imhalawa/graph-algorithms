@@ -42,10 +42,8 @@ public class ConnectedComponentsBuilder(AdjacencyListGraph graph)
         var edges = g.AdjacentVertices(vertex);
         foreach (var edge in edges)
         {
-            if (!_visited[edge])
-            {
-                Dfs(g, edge);
-            }
+            if (_visited[edge]) continue;
+            Dfs(g, edge);
         }
     }
 }
