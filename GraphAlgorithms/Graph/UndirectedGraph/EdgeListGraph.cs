@@ -1,8 +1,9 @@
 ﻿using Graph.Interfaces;
+using Graph.Undirected.Abstract;
 
 namespace Graph.Undirected;
 
-public class EdgeListGraph : IGraph<int>
+public class EdgeListGraph : IUndirectedGraph<int>
 {
     private readonly List<Edge<int>> _edgeList = [];
     private readonly List<int> _vertices = [];

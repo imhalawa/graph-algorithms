@@ -1,9 +1,10 @@
 ﻿using System.Text;
 using Graph.Interfaces;
+using Graph.Undirected.Abstract;
 
 namespace Graph.Undirected;
 
-public class AdjacencyMatrixGraph(int vertices) : IGraph<int>
+public class AdjacencyMatrixGraph(int vertices) : IUndirectedGraph<int>
 {
     private readonly int[,] _adjacencyMatrix = new int[vertices, vertices];
 

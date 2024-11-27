@@ -1,9 +1,10 @@
 ﻿using System.Text;
 using Graph.Interfaces;
+using Graph.Undirected.Abstract;
 
 namespace Graph.Undirected;
 
-public class AdjacencyListGraph : IGraph<int>
+public class AdjacencyListGraph : IUndirectedGraph<int>
 {
     private readonly List<int>[] _adjacencyList;
     private readonly int _vertices;

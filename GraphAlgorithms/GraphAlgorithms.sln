@@ -11,15 +11,27 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EdgeListUndirectedGraphClie
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Graph", "Graph\Graph.csproj", "{C2659317-5F70-4846-AD29-5D012E46476D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdjacencyMatrixUndirectedGraphClient", "Clients\AdjacencyMatrixUndirectedGraphClient\AdjacencyMatrixUndirectedGraphClient.csproj", "{D6B933C3-B045-4CE4-BEBF-FDE538686E53}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdjacencyMatrixUndirectedGraphClient", "Clients\AdjacencyMatrixUndirectedGraphClient\AdjacencyMatrixUndirectedGraphClient.csproj", "{D6B933C3-B045-4CE4-BEBF-FDE538686E53}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdjacencyListUndirectedGraphClient", "Clients\AdjacencyListUndirectedGraphClient\AdjacencyListUndirectedGraphClient.csproj", "{1B11CAA3-5EC5-47FE-8145-1C9E0C291864}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdjacencyListUndirectedGraphClient", "Clients\AdjacencyListUndirectedGraphClient\AdjacencyListUndirectedGraphClient.csproj", "{1B11CAA3-5EC5-47FE-8145-1C9E0C291864}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UndirectedGraphDfs", "Clients\UndirectedGraphDfs\UndirectedGraphDfs.csproj", "{E3124389-DA1B-4085-811A-4D82D58057D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UndirectedGraphDfs", "Clients\UndirectedGraphDfs\UndirectedGraphDfs.csproj", "{E3124389-DA1B-4085-811A-4D82D58057D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UndirectedGraphConnectedComponents", "Clients\UndirectedGraphConnectedComponents\UndirectedGraphConnectedComponents.csproj", "{62690DE4-C71F-4CB7-A50A-C4138A958231}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UndirectedGraphConnectedComponents", "Clients\UndirectedGraphConnectedComponents\UndirectedGraphConnectedComponents.csproj", "{62690DE4-C71F-4CB7-A50A-C4138A958231}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UndirectedGraphDfsClockClient", "Clients\UndirectedGraphDfsClockClient\UndirectedGraphDfsClockClient.csproj", "{5825A7C5-6CB4-44B1-BCAD-164E504FE2CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UndirectedGraphDfsClockClient", "Clients\UndirectedGraphDfsClockClient\UndirectedGraphDfsClockClient.csproj", "{5825A7C5-6CB4-44B1-BCAD-164E504FE2CC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DirectedGraph", "DirectedGraph\DirectedGraph.csproj", "{436A1E94-257E-4CF2-B585-FC173BA92E7C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Applications", "Applications", "{43BCA158-BF86-48B2-950C-E31B52DA0FA1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ActionDAG", "ActionDAG\ActionDAG.csproj", "{CE37CD2F-61EF-4A96-8595-9A7BEF74A8FF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ActionDAGRunner", "ActionDAGRunner\ActionDAGRunner.csproj", "{10FA5892-8651-407C-B0C7-0F589E0034E7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Workflow", "Workflow", "{C87AD75C-5BE3-4B9D-A6BB-2D1416D84CC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectedGraphTopologicalSort", "DirectedGraphTopologicalSort\DirectedGraphTopologicalSort.csproj", "{157C6EC3-C2E2-4E18-A6A7-0C30E801EA67}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,6 +67,22 @@ Global
 		{5825A7C5-6CB4-44B1-BCAD-164E504FE2CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5825A7C5-6CB4-44B1-BCAD-164E504FE2CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5825A7C5-6CB4-44B1-BCAD-164E504FE2CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{436A1E94-257E-4CF2-B585-FC173BA92E7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{436A1E94-257E-4CF2-B585-FC173BA92E7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{436A1E94-257E-4CF2-B585-FC173BA92E7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{436A1E94-257E-4CF2-B585-FC173BA92E7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE37CD2F-61EF-4A96-8595-9A7BEF74A8FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE37CD2F-61EF-4A96-8595-9A7BEF74A8FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE37CD2F-61EF-4A96-8595-9A7BEF74A8FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE37CD2F-61EF-4A96-8595-9A7BEF74A8FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10FA5892-8651-407C-B0C7-0F589E0034E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10FA5892-8651-407C-B0C7-0F589E0034E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10FA5892-8651-407C-B0C7-0F589E0034E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10FA5892-8651-407C-B0C7-0F589E0034E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{157C6EC3-C2E2-4E18-A6A7-0C30E801EA67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{157C6EC3-C2E2-4E18-A6A7-0C30E801EA67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{157C6EC3-C2E2-4E18-A6A7-0C30E801EA67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{157C6EC3-C2E2-4E18-A6A7-0C30E801EA67}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -67,6 +95,11 @@ Global
 		{E3124389-DA1B-4085-811A-4D82D58057D1} = {00633CB2-6537-4B66-A43E-01E1D5096190}
 		{62690DE4-C71F-4CB7-A50A-C4138A958231} = {00633CB2-6537-4B66-A43E-01E1D5096190}
 		{5825A7C5-6CB4-44B1-BCAD-164E504FE2CC} = {00633CB2-6537-4B66-A43E-01E1D5096190}
+		{436A1E94-257E-4CF2-B585-FC173BA92E7C} = {00633CB2-6537-4B66-A43E-01E1D5096190}
+		{CE37CD2F-61EF-4A96-8595-9A7BEF74A8FF} = {C87AD75C-5BE3-4B9D-A6BB-2D1416D84CC3}
+		{10FA5892-8651-407C-B0C7-0F589E0034E7} = {C87AD75C-5BE3-4B9D-A6BB-2D1416D84CC3}
+		{C87AD75C-5BE3-4B9D-A6BB-2D1416D84CC3} = {43BCA158-BF86-48B2-950C-E31B52DA0FA1}
+		{157C6EC3-C2E2-4E18-A6A7-0C30E801EA67} = {00633CB2-6537-4B66-A43E-01E1D5096190}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EF6BA16D-BD1A-45EE-B785-60AAD9ABAF55}

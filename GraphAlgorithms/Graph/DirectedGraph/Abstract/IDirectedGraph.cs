@@ -1,44 +1,59 @@
-﻿namespace Graph.Interfaces;
+﻿using System.Collections.Frozen;
+using System.Collections.Immutable;
 
-public interface IGraph<T>
+namespace Graph.Interfaces;
+
+public interface IDirectedGraph<TKey>
 {
     /// <summary>
     /// Get a collection containing all adjacent vertices to a given vertex 'v'
     /// </summary>
     /// <param name="vertex"> A vertex that belongs to the graph</param>
     /// <returns></returns>
-    IEnumerable<T> AdjacentVertices(T vertex);
-    
+    ImmutableList<TKey> Edges(TKey vertex);
+
+    /// <summary>
+    /// Get an immutable version for the adjacency list
+    /// </summary>
+    /// <returns></returns>
+    FrozenDictionary<TKey, ImmutableList<TKey>> AdjacencyList();
+
     /// <summary>
     /// Connects two vertices. In an Undirected graph, vertices are connected both ways.
     /// </summary>
     /// <param name="v">Starting vertex</param>
     /// <param name="w">Destination vertex</param>
-    void AddEdge(T v, T w);
+    void AddEdge(TKey v, TKey w);
 
     /// <summary>
     /// Disconnects two vertices. In an Undirected graph, vertices are disconnected both ways.
     /// </summary>
     /// <param name="v"></param>
     /// <param name="w"></param>
-    void RemoveEdge(T v, T w);
-    
+    void RemoveEdge(TKey v, TKey w);
+
+    /// <summary>
+    /// Remove a vertex along with it's connections from the graph
+    /// </summary>
+    /// <param name="vertex"></param>
+    void RemoveVertex(TKey vertex);
+
     /// <summary>
     /// The number of vertices in a graph
     /// </summary>
     /// <returns></returns>
-    int Vertices();
-    
+    int Count { get; }
+
     /// <summary>
-    /// The total edges in a graph
+    /// Distinct list of vertices in the graph
     /// </summary>
     /// <returns></returns>
-    int Edges();
-    
+    ImmutableList<TKey> Vertices();
+
     /// <summary>
     /// The total edges of a given vertex
     /// </summary>
     /// <param name="vertex"></param>
     /// <returns></returns>
-    int Edges(T vertex);
+    int EdgesCount(TKey vertex);
 }
